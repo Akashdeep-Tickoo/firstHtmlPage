@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Playing with forms
+        </title>
+        <link rel="shortcut icon" type="image/x-icon" href="source/rickAndMorty.jpg">
+        <meta name="form" content="information">
+        <h1>
+            HTML forms
+        </h1>
+    </head>
+    <body>
+        <form action="https://www.google.com/" method="post">
+            <label for="username">username</label>
+            <input type="text" id="username" required><br>
+            <label for="password">password</label>
+            <input type="password" id="password" required><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="abc@gmail.com"><br>
+            <input type="country" name="country" id="country" value="india" disabled><br>
+            <h3>What is your gender?</h3>
+            <input type="radio" name="gender" value="female" id="gender">female<br>
+            <input type="radio" name="gender" value="male" id="gender">male<br>
+            <input type="radio" name="gender" value="others" id="gender" checked>others<br>
+            <h3>Select your course</h3>
+            <input type="checkbox" name="course1" value="c++">C++<br>
+            <input type="checkbox" name="course2" value="python" checked>Python<br>
+            <input type="checkbox" name="course3" value="java">Java<br>
+            <h3>Select your graduation year</h3>
+            <select name="year" multiple>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option selected>2024</option>
+            </select>
+            <h3>Some sample media files</h3>
+            <b>Mozart drill</b><br>
+            <audio controls>
+                <source src="source/mozart.mp3" type="audio/mp3">
+            </audio>
+            <br><br>
+            <b>Welcome to brixton</b><br><br>
+            <video controls>
+                <source src="source/brix.mp4">
+            </video><br>
+            <figure>
+                <img src="source/ukdrill.webp" height="100px" width="150px">
+                <figcaption>Uk drill</figcaption>
+            </figure>
+            <h3>Comments</h3>
+            <textarea name="comments" rows="3" cols="30"></textarea>
+            <br><input type="submit">
+            <button type="reset"><img src="source/rickAndMorty.jpg" height="35px" width="65px"></button>
+        </form>
+        <form>
+            <fieldset>
+                <legend>subscribe</legend>
+                name:<input type="text"><br>
+                email:<input type="email"><br>
+                <input type="submit">
+            </fieldset>
+        </form>
+        <br>
+        <button onclick="alert('github: Akashdeep-Tickoo')">Contact me</button>
+        <button onclick="location.href='https://github.com/Akashdeep-Tickoo';">
+            Go to my github
+        </button>
+    </body>
+</html>
